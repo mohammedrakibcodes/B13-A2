@@ -1,0 +1,78 @@
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400 ;
+  font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    background-color: #1A0B2E;
+    color: #ffffff;
+}
+.nav-container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo h2 {
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+.logo-wave {
+    background: linear-gradient(90deg, #a855f7, #ec4899, #facc15);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
+.nav-menu {
+    list-style:none;
+    display: flex;
+    gap: 32px;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+.nav-menu li a:hover{
+    color: #a855f7;
+}
+.nav-btn a{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 10px 22px;
+    font-size: 14px;
+    border-radius: 30px;
+    font-weight: 600;
+    color:#ffffff;
+    background: linear-gradient(90deg, #a855f7, #ec4899);
+    transition: opacity 0.3s ease;
+}
+.hamburger{
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media screen and (max-width:576px) {
+    .nav-menu {
+        display: none;
+    }
+    .nav-btn{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}
