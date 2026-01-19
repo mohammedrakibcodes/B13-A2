@@ -216,6 +216,70 @@
   color: #bdbdbd;
 }
 
+.why-techwave {
+  background: radial-gradient(circle at top, #2b0a3d, #120018);
+  padding: 100px 20px;
+  color: #fff;
+}
+.why-techwave h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 60px;
+}
+.why-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: 28px;
+  grid-template-areas:
+    "audio mobile mobile"
+    "audio global global"
+    "exclusive exclusive resources";
+}
+.why-card {
+  background: #2a0e4f;
+  border-radius: 20px;
+  padding: 32px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.why-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.why-card h3 {
+  font-size: 16px;
+  margin: 0;
+}
+.why-card p {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #d6cdea;
+  margin: 0;
+}
+.why-card:nth-child(1) img {
+  margin-top: 30px;
+}
+.why-card p {
+  max-width: 420px;
+  line-height: 1.55;
+}
+.why-card:nth-child(4) p {
+  max-width: 100%;
+}
+.why-card:nth-child(1) { grid-area: audio; }
+.why-card:nth-child(2) { grid-area: mobile; }
+.why-card:nth-child(3) { grid-area: global; }
+.why-card:nth-child(4) { grid-area: exclusive; }
+.why-card:nth-child(5) { grid-area: resources; }
+
+
+
 
 /* Responsive  */
 @media (max-width: 576px) {
@@ -312,4 +376,53 @@
   .stat span {
     font-size: 11px;
   }
+  .why-techwave {
+    padding: 60px 16px;
+    overflow-x: hidden;
+  }
+  .why-techwave h2 {
+    font-size: 22px;
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  .why-grid {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+  .why-card {
+    width: 100%;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 16px;
+    grid-area: unset;
+    grid-column: unset;
+    grid-row: unset;
+  }
+  .why-card:last-child {
+    margin-bottom: 0;
+  }
+  .why-card img {
+    width: 28px;
+    height: 28px;
+  }
+  .why-card h3 {
+    font-size: 14px;
+  }
+  .why-card p {
+    font-size: 12px;
+    line-height: 1.7;
+    max-width: none;
+    width: 100%;
+    word-break: normal;
+    overflow-wrap: normal;
+    white-space: normal;
+    hyphens: none;
+  }
+
+
+
 }
+
+
