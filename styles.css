@@ -124,7 +124,11 @@
     box-shadow:
         0 0 6px rgba(34, 197, 94, 0.6),
         0 0 12px rgba(34, 197, 94, 0.4);
-}
+ animation: opacityBeat 1.8s ease-in-out infinite}
+ @keyframes opacityBeat {
+  0%,100% { opacity: 1; }
+  50%     { opacity: 0.75; }
+}     
 .hero-title {
     font-size: 48px;
     font-weight: 800;
@@ -523,7 +527,6 @@
         0 0 6px rgba(34, 197, 94, 0.6),
         0 0 12px rgba(34, 197, 94, 0.4);
         }
-
     .hero-title{
         font-size: 32px;
         margin-top: 12px;
@@ -736,6 +739,3 @@
     margin-top: 18px;
   }
 }
-
-
-
