@@ -3,7 +3,7 @@
 TechWave Podcast is a responsive podcast landing page designed to showcase podcast episodes, hosts, and community content through a modern dark-themed interface.
 
 ## Live Demo
-https://mohammedrakibcodes.github.io/B13-A2/
+https://mohammedrakibcodes.github.io/Techwave-podcast/
 
 ## Features
 - Responsive podcast landing page
